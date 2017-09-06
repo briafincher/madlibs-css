@@ -1,0 +1,31 @@
+div {
+    font-family: Garamond, Georgia, serif;
+}
+
+h1 {
+
+}
+
+p {
+    text-align: justify;
+}
+
+.bar {
+    background-color: #BBF7FF;
+    height: 100px;
+    width: 100%;
+}
+
+.header {
+    vertical-align: bottom;
+}
+
+.footer {
+    vertical-align: bottom;
+}
+
+.story {
+    margin: 5% 25% 5% 25%;
+    border: medium ridge blue;
+    padding: 15px;
+}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {% if game_on %} Let's Play a Game! {% endif %}
+    {% if not game_on %} Goodbye! {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% if game_on %}
+        <form action="/madlib">
+
+        Noun <input type="text" name="char1"><br>
+        Noun <input type="text" name="char2"><br>
+        Noun <input type="text" name="char3"><br>
+        Noun <input type="text" name="char4"><br>
+        Noun <input type="text" name="char5"><br>
+        Noun <input type="text" name="char6"><br>
+        Noun <input type="text" name="char6"><br>
+        Place <input type="text" name="noun"><br>
+        Adjective <input type="text" name="adjective1"><br>
+        Adjective <input type="text" name="adjective2"><br>
+        Adjective <input type="text" name="adjective3"><br>
+        Adjective <input type="text" name="adjective4"><br>
+        Group <input type="text" name="group"><br>
+        Verb <input type="text" name="verb"><br>
+        Physical Trait <input type="text" name="physical_trait"><br>
+
+        <input type="submit">
+        </form>
+    {% endif %}
+
+    {% if not game_on %}
+        <h1>Goodbye! You will be missed!!</h1>
+    {% endif %}
+{% endblock %}
